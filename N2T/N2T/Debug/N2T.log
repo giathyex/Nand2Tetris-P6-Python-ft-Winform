@@ -1,0 +1,15 @@
+﻿Build started 14-Dec-20 2:08:04 AM.
+     1>Project "C:\Users\Administrator\Desktop\N2T\N2T\N2T\N2T.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Main.cpp
+         Main.cpp
+     1>Main.cpp(7): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\N2T\N2T\Debug\N2T.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\N2T.Main.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\Desktop\N2T\N2T\Debug\N2T.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\Main.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         N2T.vcxproj -> C:\Users\Administrator\Desktop\N2T\N2T\Debug\N2T.exe
+     1>Done Building Project "C:\Users\Administrator\Desktop\N2T\N2T\N2T\N2T.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.00

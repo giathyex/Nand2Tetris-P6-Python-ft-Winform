@@ -1,0 +1,11 @@
+﻿Build started 14-Dec-20 9:20:04 AM.
+     1>Project "C:\Users\Administrator\Desktop\N2T\N2T\N2T\N2T.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\N2T\N2T\Release\N2T.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\N2T.Main.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\Desktop\N2T\N2T\Release\N2T.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\Main.obj
+         "Release\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         N2T.vcxproj -> C:\Users\Administrator\Desktop\N2T\N2T\Release\N2T.exe
+     1>Done Building Project "C:\Users\Administrator\Desktop\N2T\N2T\N2T\N2T.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.79

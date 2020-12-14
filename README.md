@@ -1,7 +1,7 @@
 # Nand2Tetris-P6-Python-ft-Winform
 A Winform C++ GUI for a Python assembler for HACK machine
 
-N2T: Source code for the Winform GUI \n
+N2T: Source code for the Winform GUI /n
 PythonAssembler: Source code for the assembler
 
 How to use:

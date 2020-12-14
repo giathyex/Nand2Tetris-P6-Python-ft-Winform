@@ -155,7 +155,9 @@ def firstPass():
 # Take file stripped of labels and translate it into .hack
 def assemble():
   infile = open(root + ".tmp")
-  outfile = open(root + ".hack", "w")
+  temp = root.split('.')
+  a = temp[0]
+  outfile = open(a + ".hack", "w")
 
   for line in infile:
     tline = translate(line)

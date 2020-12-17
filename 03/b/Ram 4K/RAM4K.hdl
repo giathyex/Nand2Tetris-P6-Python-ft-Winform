@@ -1,0 +1,38 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/b/RAM4K.hdl
+
+/**
+ * Memory of 4K registers, each 16 bit-wide. Out holds the value
+ * stored at the memory location specified by address. If load==1, then 
+ * the in value is loaded into the memory location specified by address 
+ * (the loaded value will be emitted to out from the next time step onward).
+ */
+
+CHIP RAM4K {
+    IN in[16], load, address[12];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here:
+     // RAM array
+    RAM512(in = in, load = load0, address = address[0..8], out = out0);
+    RAM512(in = in, load = load1, address = address[0..8], out = out1);
+    RAM512(in = in, load = load2, address = address[0..8], out = out2);
+    RAM512(in = in, load = load3, address = address[0..8], out = out3);
+    RAM512(in = in, load = load4, address = address[0..8], out = out4);
+    RAM512(in = in, load = load5, address = address[0..8], out = out5);
+    RAM512(in = in, load = load6, address = address[0..8], out = out6);
+    RAM512(in = in, load = load7, address = address[0..8], out = out7);
+
+    // Output logic (Use if read only)
+    Mux4Way16(a = out0, b = out1, c = out2, d = out3, sel[0] = address[9], sel[1] = address[10], out = mux1);
+    Mux4Way16(a = out4, b = out5, c = out6, d = out7, sel[0] = address[9], sel[1] = address[10], out = mux2);
+    Mux16(a = mux1, b = mux2, sel = address[11], out = out);
+
+    // Address logic (Use if change value)
+    DMux(in = load, sel = address[11], a = dmux1, b = dmux2);
+    DMux4Way(in = dmux1, sel[0] = address[9], sel[1] = address[10], a = load0, b = load1, c = load2, d = load3);
+    DMux4Way(in = dmux2, sel[0] = address[9], sel[1] = address[10], a = load4, b = load5, c = load6, d = load7);
+}
